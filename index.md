@@ -23,7 +23,7 @@ NutriCue AI is a mobile app that uses AI to help you remember to take your vitam
 
 ## Built With Modern Technology
 
-NutriCue AI leverages React Native 0.79.5, Expo 53.0.19, and SQLite for a robust, scalable architecture that prioritizes user experience and data integrity.
+NutriCue AI leverages React Native 0.79.5, Expo 53.0.22, and SQLite for a robust, scalable architecture that prioritizes user experience and data integrity.
 
 ## Explore the Documentation
 
