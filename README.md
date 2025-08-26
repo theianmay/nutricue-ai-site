@@ -7,7 +7,7 @@ This repository hosts the official website for NutriCue AI, a mobile app that us
 
 The site is publicly accessible at: https://theianmay.github.io/nutricue-ai-site
 
-<img src="images/ar-lrg-icon.png" width="250">
+<img src="images/NutriCue-AI-Icon.png" width="250">
 
 <img src="https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB"> <img src="https://img.shields.io/badge/Expo-1B1F23?style=flat&logo=expo&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-323330?style=flat&logo=typescript&logoColor=F7DF1E">  <img src="https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white"> <img src="https://img.shields.io/badge/Jest-C21325?style=flat&logo=jest&logoColor=white">
 
@@ -22,22 +22,23 @@ The site is publicly accessible at: https://theianmay.github.io/nutricue-ai-site
 
 The website comprehensively covers NutriCue AI's capabilities including:
 
-- **Barcode Scanning** with multi-scan batch processing
-- **Offline-First Operation** using local SQLite database
-- **Location Tracking** with optional GPS integration
-- **Digital Approvals** featuring PDF generation and signature capture
-- **Data Import/Export** with CSV/JSON validation and round-trip compatibility
-- **Audit Trail** system with barcode-based persistence
+- **AI-Powered Reminder Creation** with natural language processing
+- **Photo-Based Reminders** using camera integration for supplement identification
+- **Smart Scheduling** with recurring patterns (daily, weekly, custom times, intervals)
+- **Offline Mode** with local pattern matching for basic reminder functionality
+- **Notification System** with comprehensive scheduling and iOS/Android optimization
+- **Subscription Management** with free tier limits and premium features
 - **Cross-Platform** React Native and Expo implementation
 
 ## Technical Documentation
 
 The architecture section provides detailed insights into:
-- Technology stack selection and rationale
-- State management strategy with multi-layered approach
-- Database design with SQLite v3 schema
-- Security considerations and performance optimizations
-- Testing strategy and build pipeline
+- AI integration with OpenAI services and offline fallback systems
+- State management with Zustand stores for reminders and AI conversations
+- Local storage with AsyncStorage and SQLite for reminder persistence
+- Notification scheduling with platform-specific optimizations
+- Subscription management with RevenueCat integration
+- Testing strategy with Jest and comprehensive test coverage
 
 ## Purpose
 
@@ -48,8 +49,6 @@ This site serves as the comprehensive resource for users, developers, and stakeh
 Content is regularly updated to reflect new features, architectural improvements, and policy revisions.
 
 **Last major update:** August 25, 2025
-- Enhanced privacy policy with current permissions and features
-- Updated technical architecture documentation
-- Improved home page with comprehensive feature overview
+- Initial website creation
 
- 2025 NutriCue AI. All rights reserved.
+© 2025 NutriCue AI. All rights reserved.
