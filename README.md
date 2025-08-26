@@ -9,7 +9,7 @@ The site is publicly accessible at: https://theianmay.github.io/nutricue-ai-site
 
 <img src="images/ar-lrg-icon.png" width="250">
 
-<img src="https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB"> <img src="https://img.shields.io/badge/Expo-1B1F23?style=flat&logo=expo&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-323330?style=flat&logo=javascript&logoColor=F7DF1E">  <img src="https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white"> <img src="https://img.shields.io/badge/Jest-C21325?style=flat&logo=jest&logoColor=white">
+<img src="https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB"> <img src="https://img.shields.io/badge/Expo-1B1F23?style=flat&logo=expo&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-323330?style=flat&logo=typescript&logoColor=F7DF1E">  <img src="https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white"> <img src="https://img.shields.io/badge/Jest-C21325?style=flat&logo=jest&logoColor=white">
 
 ## Repository Structure
 
