@@ -12,3 +12,7 @@ Explore NutriCue AI's intuitive interface through these screenshots showcasing k
 
 ## Detailed screenshots coming soon...
 ---
+
+---
+
+[Home](index.md) | [Screenshots](screenshots.md) | [Architecture](architecture.md) | [Privacy](privacy.md)
