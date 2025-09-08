@@ -14,16 +14,16 @@ NutriCue AI is a mobile app that uses AI to help you remember to take your vitam
 ## Key Features
 
 - **AI-Powered Reminder Creation** with natural language processing
-- **Photo-Based Reminders** using camera integration for supplement identification
+- **Photo-Based Reminders** using OpenAI GPT-4o Vision for image analysis
 - **Smart Scheduling** with recurring patterns (daily, weekly, custom times, intervals)
-- **Offline Mode** with local pattern matching for basic reminder functionality
+- **Offline Mode** with fallback responses when AI services are unavailable
 - **Notification System** with comprehensive scheduling and iOS/Android optimization
 - **Subscription Management** with free tier limits and premium features
-- **Cross-Platform** React Native and Expo implementation
+- **Full-Stack Architecture** with React Native frontend and Node.js backend
 
 ## Built With Modern Technology
 
-NutriCue AI leverages React Native 0.79.5, Expo 53.0.22, and SQLite for a robust, scalable architecture that prioritizes user experience and data integrity.
+NutriCue AI leverages React Native with Expo, TypeScript, and a comprehensive Node.js backend for a robust, scalable full-stack architecture with AI integration.
 
 ## Explore the Documentation
 
