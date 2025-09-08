@@ -1,15 +1,15 @@
 # NutriCue AI Website
 
-This repository hosts the official website for NutriCue AI, a mobile app that uses AI to help you remember to take your vitamins. The website provides detailed feature overviews, technical architecture documentation, and complete privacy policy information. iOS and Android apps coming soon - please [email](mailto:caesiusbay@gmail.com) me if you'd like to be a tester or get the early access release.
+This repository hosts the official website for NutriCue AI, a full-stack AI-powered supplement reminder application. The website provides detailed feature overviews, technical architecture documentation, and complete privacy policy information. iOS and Android apps coming soon - please [email](mailto:caesiusbay@gmail.com) me if you'd like to be a tester or get the early access release.
 
 [<img src="https://img.shields.io/badge/App_Store-0D96F6?style=flat&logo=app-store&logoColor=white">](https://apps.apple.com/)
 [<img src="https://img.shields.io/badge/Google_Play-414141?style=flat&logo=google-play&logoColor=white">](https://play.google.com/)
 
 The site is publicly accessible at: https://theianmay.github.io/nutricue-ai-site
 
-<img src="images/NutriCue-AI-Icon.png" width="250">
+<img src="images/nutricue-ai-icon.png" width="250">
 
-<img src="https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB"> <img src="https://img.shields.io/badge/Expo-1B1F23?style=flat&logo=expo&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-323330?style=flat&logo=typescript&logoColor=F7DF1E">  <img src="https://img.shields.io/badge/Jest-C21325?style=flat&logo=jest&logoColor=white">
+<img src="https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB"> <img src="https://img.shields.io/badge/Expo-1B1F23?style=flat&logo=expo&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-323330?style=flat&logo=typescript&logoColor=F7DF1E"> <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white"> <img src="https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white"> <img src="https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white"> <img src="https://img.shields.io/badge/Jest-C21325?style=flat&logo=jest&logoColor=white">
 
 ## Repository Structure
 
@@ -23,22 +23,23 @@ The site is publicly accessible at: https://theianmay.github.io/nutricue-ai-site
 The website comprehensively covers NutriCue AI's capabilities including:
 
 - **AI-Powered Reminder Creation** with natural language processing
-- **Photo-Based Reminders** using camera integration for supplement identification
+- **Photo-Based Reminders** using OpenAI GPT-4o Vision for image analysis
 - **Smart Scheduling** with recurring patterns (daily, weekly, custom times, intervals)
-- **Offline Mode** with local pattern matching for basic reminder functionality
+- **Offline Mode** with fallback responses when AI services are unavailable
 - **Notification System** with comprehensive scheduling and iOS/Android optimization
 - **Subscription Management** with free tier limits and premium features
-- **Cross-Platform** React Native and Expo implementation
+- **Full-Stack Architecture** with React Native frontend and Node.js backend
 
 ## Technical Documentation
 
 The architecture section provides detailed insights into:
-- AI integration with OpenAI services and offline fallback systems
+- AI integration with OpenAI GPT-4o and backend proxy architecture
 - State management with Zustand stores for reminders and AI conversations
-- Local storage with AsyncStorage and SQLite for reminder persistence
+- Local storage with AsyncStorage for reminder persistence
+- Backend API with Node.js, Express.js, and JWT authentication
 - Notification scheduling with platform-specific optimizations
 - Subscription management with RevenueCat integration
-- Testing strategy with Jest and comprehensive test coverage
+- Comprehensive testing strategy with Jest for both frontend and backend
 
 ## Purpose
 
@@ -48,7 +49,9 @@ This site serves as the comprehensive resource for users, developers, and stakeh
 
 Content is regularly updated to reflect new features, architectural improvements, and policy revisions.
 
-**Last major update:** August 25, 2025
-- Initial website creation
+**Last major update:** September 8, 2025
+- Updated to reflect full-stack architecture with Node.js backend
+- Added OpenAI GPT-4o Vision integration details
+- Enhanced AI service documentation
 
 © 2025 NutriCue AI. All rights reserved.
