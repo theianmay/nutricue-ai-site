@@ -7,7 +7,7 @@ This repository hosts the official website for NutriCue AI, a full-stack AI-powe
 
 The site is publicly accessible at: https://theianmay.github.io/nutricue-ai-site
 
-<img src="images/nutricue-ai-icon.png" width="250">
+<img src="images/NutriCue-AI-Icon.png" width="250">
 
 <img src="https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB"> <img src="https://img.shields.io/badge/Expo-1B1F23?style=flat&logo=expo&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-323330?style=flat&logo=typescript&logoColor=F7DF1E"> <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white"> <img src="https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white"> <img src="https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white"> <img src="https://img.shields.io/badge/Jest-C21325?style=flat&logo=jest&logoColor=white">
 
