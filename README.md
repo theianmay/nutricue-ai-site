@@ -1,10 +1,10 @@
 # NutriCue AI Website
 
-This repository hosts the official website for NutriCue AI, a full-stack AI-powered supplement reminder application. The website provides detailed feature overviews, technical architecture documentation, and complete privacy policy information. iOS and Android apps coming soon - please [email](mailto:caesiusbay@gmail.com) me if you'd like to be a tester or get the early access release.
+This repository hosts the official website for NutriCue AI, a full-stack AI-powered reminder application. The website provides detailed feature overviews, technical architecture documentation, and complete privacy policy information. iOS and Android apps coming soon - please [email](mailto:caesiusbay@gmail.com) me if you'd like to be a tester or get the early access release.
 
 [<img src="https://img.shields.io/badge/App_Store-0D96F6?style=flat&logo=app-store&logoColor=white">](https://apps.apple.com/)
 [<img src="https://img.shields.io/badge/Google_Play-414141?style=flat&logo=google-play&logoColor=white">](https://play.google.com/)
-
+  
 The site is publicly accessible at: https://theianmay.github.io/nutricue-ai-site
 
 <img src="images/NutriCue-AI-Icon-main.png" width="250">
@@ -14,7 +14,7 @@ The site is publicly accessible at: https://theianmay.github.io/nutricue-ai-site
 ## Repository Structure
 
 - **index.md** — Home page featuring NutriCue AI's key capabilities and technology overview
-- **screenshots.md** — Visual gallery showcasing the application interface (coming soon)
+- **screenshots.md** — Visual gallery showcasing the application interface
 - **architecture.md** — In-depth technical architecture and design philosophy documentation
 - **privacy.md** — Complete privacy policy covering data handling, permissions, and user rights
 
@@ -49,9 +49,11 @@ This site serves as the comprehensive resource for users, developers, and stakeh
 
 Content is regularly updated to reflect new features, architectural improvements, and policy revisions.
 
-**Last major update:** September 8, 2025
-- Updated to reflect full-stack architecture with Node.js backend
-- Added OpenAI GPT-4o Vision integration details
-- Enhanced AI service documentation
+**Last major update:** September 19, 2025
+- Updated to reflect App Store ready status
+- Added onboarding flow and permission handling documentation
+- Updated subscription model and feature limits
+- Enhanced security documentation with backend proxy architecture
+- Added App Store readiness and compliance information
 
 © 2025 NutriCue AI. All rights reserved.
