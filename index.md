@@ -4,7 +4,7 @@ title: Home
 
 # Welcome to NutriCue AI
 
-NutriCue AI is a mobile app that uses AI to help you remember to take your vitamins.
+NutriCue AI is a production-ready mobile application that uses advanced AI to help you manage your daily tasks and reminders through natural conversation and intelligent image scanning.
 
 <img src="images/NutriCue-AI-Icon-main.png" width="250">
 
