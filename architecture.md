@@ -4,13 +4,14 @@ title: Architecture
 
 # NutriCue AI Technical Architecture
 
-**Last Updated: September 8, 2025**
+**Last Updated: September 19, 2025**  
+**Status: App Store Ready**
 
-A comprehensive overview of the technical design and implementation decisions behind NutriCue AI's dietary supplement reminder system.
+A comprehensive overview of the production-ready technical architecture behind NutriCue AI's AI-powered reminder system, featuring backend-proxy AI integration, Railway deployment, and cross-platform subscription management.
 
-## System Overview
+## Production System Overview
 
-NutriCue AI is built as a full-stack application with a React Native mobile frontend and Node.js backend, leveraging AI-powered natural language processing for intelligent supplement reminder creation, with robust offline capabilities and platform-optimized notification delivery.
+NutriCue AI is a production-ready full-stack application with a React Native mobile frontend and Railway-deployed Node.js backend, featuring secure AI integration via backend proxy, PostgreSQL database, and RevenueCat subscription management. The system is optimized for reminder management with HTTPS-only communication and App Store compliance.
 
 ## Backend Architecture
 
@@ -32,7 +33,7 @@ NutriCue AI is built as a full-stack application with a React Native mobile fron
 - **Health Monitoring** - System status and uptime checks
 - **Authentication Routes** - User registration, login, device auth
 - **AI Processing Routes** - Reminder parsing and image analysis
-- **Reminder Management** - CRUD operations for supplement reminders
+- **Reminder Management** - CRUD operations for reminders
 
 ## Technology Stack
 
@@ -49,50 +50,81 @@ NutriCue AI is built as a full-stack application with a React Native mobile fron
 - **AsyncStorage** - Local data persistence with retry logic
 - **Custom Hooks** - Encapsulated business logic
 
-### AI Integration
-- **OpenAI GPT-4o** - Natural language processing and vision capabilities
-- **OpenAI GPT-4o Vision** - Image analysis and text extraction
-- **Backend AI Proxy** - Secure API key management and cost control
-- **Custom AI Prompts** - Supplement-focused reminder parsing and scheduling
-- **Offline Mode** - Fallback responses when AI services unavailable
+### Production Infrastructure
+- **Railway Deployment** - Production hosting at `https://nutricue-backend-production.up.railway.app`
+- **PostgreSQL Database** - Production database with connection pooling and automatic backups
+- **HTTPS/SSL** - Automatic certificate management via Railway
+- **Health Monitoring** - `/health`, `/ready`, `/live` endpoints for production reliability
+- **Auto-Scaling** - Railway infrastructure handles traffic growth automatically
+
+### AI Integration (Backend Proxy)
+- **OpenAI GPT-4o** - Natural language processing via secure backend proxy
+- **OpenAI GPT-4o Vision** - Image analysis for text recognition and scanning
+- **Backend Proxy Security** - API keys secured in backend, never exposed to mobile app
+- **Usage Tracking** - PostgreSQL-based limits and subscription validation
+- **Cost Control** - Backend-managed API usage and rate limiting
+
+### Subscription Management
+- **RevenueCat SDK** - Cross-platform subscription management with real API keys
+- **Freemium Model** - 5 active reminders, 3 image scans, 15 AI interactions/month free
+- **Premium Tier** - Unlimited reminders & AI conversations, 20 image scans/month
+- **Pricing** - $5.99/month or $39.99/year for AI Premium
+- **Feature Gating** - Usage limits enforced at backend level
 
 ### Notification System
-- **Expo Notifications** - Local push notifications
-- **Platform-specific channels** - Android notification channels
-- **Production-grade scheduling** - UUID tracking and comprehensive error handling
-- **iOS Compliance** - 64-notification limit handling with rolling window scheduling
+- **Expo Notifications** - Local push notifications with smart scheduling
+- **Platform-specific channels** - Android notification channels for reminders
+- **Smart Scheduling** - AI-powered reminder timing optimization
+- **Permission Management** - Smart onboarding flow with skip handling
+
+### User Onboarding
+- **2-Screen Flow** - Welcome screen and permissions setup
+- **Smart Permission Handling** - Tracks permission requests and handles skips
+- **Generic Content** - Works for any reminder use case
+- **Theme Responsive** - Full light/dark mode support
 
 ## Architecture Patterns
 
-### Mobile App Data Flow
+### Production Data Flow (Backend Proxy)
 ```
-User Input → AI Service Layer → Backend Proxy → OpenAI API → Reminder Creation → Local Storage → Notification Scheduling
-```
-
-### Backend Data Flow
-```
-Mobile App → JWT Auth → Rate Limiting → AI Processing → OpenAI API → Response → Mobile App
+Mobile App → JWT Auth → Backend API → Usage Validation → OpenAI GPT-4o → PostgreSQL → Response
+     ↓              ↓              ↓               ↓              ↓              ↓
+RevenueCat → User Validation → Rate Limiting → AI Processing → Usage Tracking → Mobile App
 ```
 
-### Offline-First Design
-- **Local Data Persistence** - All user data stored on-device via AsyncStorage
-- **AI Service Abstraction** - Pluggable online/offline processing modes
-- **Graceful Degradation** - Full functionality without external dependencies
+### Subscription Flow
+```
+App Launch → RevenueCat SDK → Subscription Service → Usage Tracking → Feature Gating
+     ↓              ↓                    ↓                 ↓              ↓
+Local State → Platform Store → Backend Validation → PostgreSQL → UI Components
+```
 
-### Security & Privacy
-- **Backend Proxy** - API keys secured on backend server, not exposed in mobile app
-- **JWT Authentication** - Secure user authentication and session management
-- **Rate Limiting** - Express rate limiter with API abuse prevention
-- **Device-Level Encryption** - Leveraging platform security features
-- **User Control** - Complete offline mode available
+### Security & Compliance
+- **HTTPS-Only Communication** - All production traffic encrypted
+- **API Key Security** - OpenAI keys secured in Railway backend, never exposed to client
+- **JWT Authentication** - Production-grade device authentication
+- **PostgreSQL with RLS** - Row Level Security for data isolation
+- **Privacy Compliant** - General reminder focus, no medical claims or prescription handling
 
-## Subscription Architecture
+### Graceful Degradation
+- **Offline Queue** - Store AI requests for later processing when backend unavailable
+- **Manual Fallback** - Direct users to traditional reminder creation
+- **Clear Messaging** - Inform users of limited functionality
+- **No Blocking** - Core reminder functionality never depends solely on AI services
 
-### Revenue Model
-- **RevenueCat SDK** - Cross-platform subscription management
-- **Freemium Model** - 15 AI interactions/month free, unlimited premium
-- **Usage Tracking** - Monthly limits and premium feature gating
-- **Feature Gating** - AI capabilities tied to subscription status
+## Production Architecture Benefits
+
+### Scalability & Performance
+- **Railway Auto-scaling** - Backend infrastructure scales with user growth
+- **PostgreSQL Optimization** - Connection pooling and query optimization
+- **Rate Limiting** - Prevents abuse and controls costs
+- **Health Monitoring** - Production reliability with comprehensive endpoints
+
+### Monetization Integration
+- **RevenueCat Handles Complexity** - Cross-platform subscription management
+- **Backend Validates Subscriptions** - Usage limits enforced before AI requests
+- **Real-time Tracking** - PostgreSQL-based usage monitoring
+- **Graceful Limit Handling** - Seamless transition when limits reached
 
 ### Scalability Considerations
 - **Local-First Processing** - Reduces server load and latency
