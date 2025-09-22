@@ -10,8 +10,6 @@ title: Privacy Policy
 
 Welcome to NutriCue AI ("we," "our," or "us"). We respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, and safeguard your information when you use our mobile application to manage reminders.
 
-**Important Notice: NutriCue AI is designed as a general purpose reminder app but can be used to help users to remember to take their vitamins. It is not intended to handle medications, prescriptions, or provide medical advice.**
-
 **Developer Information:**  
 NutriCue AI is developed by Caesius Bay  
 Contact: caesiusbay@gmail.com  
@@ -151,6 +149,7 @@ We retain your information for as long as necessary to provide our services:
 
 When using AI features, your data is first processed by our backend servers and then sent to OpenAI's servers, which may be located outside your country of residence. Our backend acts as a secure intermediary to protect your data during transmission. This processing is subject to OpenAI's privacy policy and security measures. We ensure that any international transfers comply with applicable data protection laws.
 
+**Important Notice: NutriCue AI is designed as a general purpose reminder app. It is not intended to handle medications, prescriptions, or provide medical advice.**
 
 ## California Privacy Rights (CCPA)
 
