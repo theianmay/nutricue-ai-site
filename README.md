@@ -1,8 +1,8 @@
 # NutriCue AI Website
 
-This repository hosts the official website for NutriCue AI, a full-stack AI-powered reminder application. The website provides detailed feature overviews, technical architecture documentation, and complete privacy policy information. iOS and Android apps coming soon - please [email](mailto:caesiusbay@gmail.com) me if you'd like to be a tester or get the early access release.
+This repository hosts the official website for NutriCue AI, a full-stack AI-powered reminder application. The website provides detailed feature overviews, technical architecture documentation, and complete privacy policy information. iOS app is live! Android app coming soon - please [email](mailto:caesiusbay@gmail.com) me if you'd like to be a tester or get the early access release.
 
-[<img src="https://img.shields.io/badge/App_Store-0D96F6?style=flat&logo=app-store&logoColor=white">](https://apps.apple.com/)
+[<img src="https://img.shields.io/badge/App_Store-0D96F6?style=flat&logo=app-store&logoColor=white">](https://apps.apple.com/us/app/nutricue-ai/id6751450588)
 [<img src="https://img.shields.io/badge/Google_Play-414141?style=flat&logo=google-play&logoColor=white">](https://play.google.com/)
   
 The site is publicly accessible at: https://theianmay.github.io/nutricue-ai-site
