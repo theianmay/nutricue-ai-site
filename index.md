@@ -4,11 +4,11 @@ title: Home
 
 # Welcome to NutriCue AI
 
-NutriCue AI is a production-ready mobile application that uses advanced AI to help you manage your reminders through natural conversation and intelligent image scanning.
+NutriCue AI is a mobile application that uses AI to help you manage your reminders through natural conversation and intelligent image scanning.
 
 <img src="images/NutriCue-AI-Icon-main.png" width="250">
 
-[<img src="https://img.shields.io/badge/App_Store-0D96F6?style=flat&logo=app-store&logoColor=white">](https://apps.apple.com/)
+[<img src="https://img.shields.io/badge/App_Store-0D96F6?style=flat&logo=app-store&logoColor=white">](https://apps.apple.com/us/app/nutricue-ai/id6751450588)
 [<img src="https://img.shields.io/badge/Google_Play-414141?style=flat&logo=google-play&logoColor=white">](https://play.google.com/)
 
 ## Key Features
