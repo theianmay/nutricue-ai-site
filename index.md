@@ -8,8 +8,10 @@ NutriCue AI is a mobile application that uses AI to help you manage your reminde
 
 <img src="images/NutriCue-AI-Icon-main.png" width="250">
 
+**Available for download**:
 [<img src="https://img.shields.io/badge/App_Store-0D96F6?style=flat&logo=app-store&logoColor=white">](https://apps.apple.com/us/app/nutricue-ai/id6751450588)
 [<img src="https://img.shields.io/badge/Google_Play-414141?style=flat&logo=google-play&logoColor=white">](https://play.google.com/)
+*<--- CLICK HERE*
 
 ## Key Features
 
